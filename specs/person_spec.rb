@@ -9,6 +9,10 @@ def setup
   @person = Person.new("Fred", 40)
 end
 
+def test_can_create_person()
+  assert_equal(Person, @person.class())
+end
+
 def test_get_person_name
   assert_equal("Fred", @person.name())
 end
